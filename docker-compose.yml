@@ -66,7 +66,7 @@ services:
       # Make sure uv/uvx (installed to ~/.local/bin) resolve for every
       # shell the harness spawns, not just the one that installed them.
       - PATH=/data/home/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-    ports:
+    expose:
       # Web UI. The MCP server (47332) is intentionally NOT exposed — it's
       # only consumed by the CLIs running inside this container.
       - "47331"
